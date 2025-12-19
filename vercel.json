@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://REPLACE_WITH_RAILWAY_DOMAIN/api/:path*"
+      "destination": "https://https://task-manager-2-zcjc.onrender.com/api/:path*"
     },
     {
       "source": "/socket.io/:path*",
-      "destination": "https://REPLACE_WITH_RAILWAY_DOMAIN/socket.io/:path*"
+      "destination": "https://https://task-manager-2-zcjc.onrender.com/socket.io/:path*"
     },
     {
       "source": "/(.*)",
