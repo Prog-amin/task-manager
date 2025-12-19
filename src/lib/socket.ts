@@ -5,9 +5,8 @@ let socket: Socket | null = null;
 export function getSocket() {
   if (!socket) {
     const url = import.meta.env.VITE_SOCKET_URL || undefined;
-    socket = io({
-      ...(url ? { url } : {}),
-      transports: ["websocket"],
+    socket = io(url, {
+      transports: ["websocket", "polling"],
       withCredentials: true,
     });
   }
